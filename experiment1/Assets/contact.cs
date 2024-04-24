@@ -8,19 +8,12 @@ public class contact : MonoBehaviour // この行はコピーしてはいけな�
 {
     [SerializeField]
     private TextMeshProUGUI TextTime;
-    private float elapsedTime;
-
-    // ゴールに到達した時に1となるフラグを追加する
-    private int f_gall;
-
     private int collision;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        elapsedTime = 0.0F;
-        f_gall = 0; // 停止フラグを初期化する
         collision = 0;
     }
 

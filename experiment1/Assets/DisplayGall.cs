@@ -7,14 +7,12 @@ using TMPro;
 public class DisplayGall : MonoBehaviour
 {
     [SerializeField]private TextMeshProUGUI DisplayGallText;
-    private float elapsedTime;
 
     // ゴールに到達した時に1となるフラグを追加する
     private int f_gall;
     // Start is called before the first frame update
     void Start()
     {
-        elapsedTime = 0.0F;
         f_gall = 0; // 停止フラグを初期化する
     }
 
