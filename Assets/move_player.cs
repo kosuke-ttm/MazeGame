@@ -24,19 +24,19 @@ public class move_player : MonoBehaviour
         }
         if(Input.GetKey("up")) // ↑なら前(Z 方向)に 0.1 だけ進む
         {
-            transform.position += transform.forward * 0.1f;
+            transform.position += transform.forward * 0.08f;
         }
         if(Input.GetKey("down")) // ↓なら後ろ(Z 方向)に 0.1 だけ進む
         {
-            transform.position -= transform.forward * 0.1f;
+            transform.position -= transform.forward * 0.08f;
         }
         if(Input.GetKey("right")) // →なら Y 軸に 5 度回転する
         {
-            transform.Rotate(0f, 6.0f, 0f);
+            transform.Rotate(0f, 3.0f, 0f);
         }
         if(Input.GetKey("left")) // ←ならY 軸に-5 度回転する
         {
-            transform.Rotate(0f, -6.0f, 0f);
+            transform.Rotate(0f, -3.0f, 0f);
         }
     }
 }
