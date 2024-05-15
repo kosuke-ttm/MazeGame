@@ -26,7 +26,7 @@ public class GetCapsulesScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.root.gameObject.name == "Capsules")
+        if (other.transform.root.gameObject.name == "Coin")
         {
             //音(sound1)を鳴らす
             audioSource.PlayOneShot(getSound);
