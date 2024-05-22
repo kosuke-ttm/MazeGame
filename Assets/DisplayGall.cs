@@ -21,7 +21,7 @@ public class DisplayGall : MonoBehaviour
     {
         if (f_gall != 0) // ゴールに到達していない場合だけ時間を加算する
         {
-            DisplayGallText.text = string.Format("Gall!");
+            DisplayGallText.text = string.Format("Goal!");
         }
     }
 
