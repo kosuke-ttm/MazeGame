@@ -37,16 +37,12 @@ public class move_player : MonoBehaviour
             // 回転軸はカメラ自身のX軸
             transform.RotateAround(player.transform.position, transform.right, my);
         }
-
-        if(Input.GetKeyDown(KeyCode.Space))
+        
+        if(Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
             rb.velocity = Vector3.up * jumpPower;
+            isJumping = true;
         }
-        // if(Input.GetKeyDown(KeyCode.Space) && !isJumping)
-        // {
-        //     rb.velocity = Vector3.up * jumpPower;
-        //     isJumping = true;
-        // }
         if(Input.GetKey("w")) // ↑なら前(Z 方向)に 0.1 だけ進む
         {
             transform.position += transform.forward * 0.08f;
