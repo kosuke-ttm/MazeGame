@@ -33,7 +33,7 @@ public class time : MonoBehaviour
     // 衝突を判定する処理を追加する
     void OnCollisionEnter(Collision other) // 衝突を判定する関数を呼ぶ
     {
-        if (other.gameObject.name == "Cylinder") // 衝突した物体が「ゴール」なら(※)
+        if (other.gameObject.name == "ゴール") // 衝突した物体が「ゴール」なら(※)
         {
             f_gall = 1; // 衝突フラグを上げる
             TextTime.text = string.Format("Gall!");
